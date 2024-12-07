@@ -1,0 +1,11 @@
+{
+    "name": "E-Ink React Dashboard Add-on",
+    "version": "1.0",
+    "slug": "react-dashboard",
+    "description": "Visualize Home Assistant data as a react page on E-Ink displays",
+    "startup": "services",
+    "boot": "auto",
+    "host_network": true,
+    "options": {},
+    "schema": {}
+  }
