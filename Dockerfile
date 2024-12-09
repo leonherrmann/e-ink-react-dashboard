@@ -7,7 +7,6 @@ RUN npm install
 COPY src/frontend /app
 RUN npm run build
 
-ARG BUILD_FROM
 FROM ${BUILD_FROM} as main-app
 
 # We don't need the standalone Chromium
