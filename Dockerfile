@@ -1,4 +1,4 @@
-ARG BUILD_FROM
+ARG BUILD_FROM=ghcr.io/home-assistant/amd64-base:latest 
 FROM ${BUILD_FROM} as react-build
 
 RUN apk add --no-cache nodejs npm python3 make g++
@@ -18,7 +18,24 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 # Install Google Chrome Stable and fonts
 # Note: this installs the necessary libs to make the browser work with Puppeteer.
 
-RUN apk add --no-cache nodejs npm python3 make g++ chromium
+RUN apk add --no-cache 
+
+RUN apk add --no-cache \
+    nodejs \
+    npm \
+    python3 \
+    make \
+    g++ \
+    chromium \
+    build-base \
+    cairo-dev \
+    jpeg-dev \
+    pango-dev \
+    giflib-dev \
+    pixman-dev \
+    g++ \
+    make \
+    python3
 
 # Set the working directory
 WORKDIR /app
