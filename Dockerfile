@@ -36,5 +36,9 @@ RUN npm rebuild canvas
 # Expose the port
 EXPOSE 5001
 
+# Copy data for add-on
+COPY run.sh /
+RUN chmod a+x /run.sh
+
 # Start the application
 CMD ["/run.sh"]
