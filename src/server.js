@@ -29,9 +29,7 @@ app.get('/image', async (req, res) => {
   try {
     const browser = await puppeteer.launch({
       headless: true,
-      defaultViewport: null,
-      executablePath: "/usr/bin/google-chrome",
-      args: ["--no-sandbox"],
+      args: ["--no-sandbox","--disable-dev-shm-usage"],
     });
     console.log('Launched Puppeteer browser');
 
