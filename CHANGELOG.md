@@ -1,6 +1,10 @@
 # Changelog
 
-## 2024.12.3
+## 2024.12.4
+
+Add fix dockerfile
+
+## 2024.12.4
 
 Add node to dependencies
 
