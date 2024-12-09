@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024.12.8
+
+add exported ports to config
+
 ## 2024.12.6
 
 hope this works

@@ -1,6 +1,6 @@
 name: "E-Ink React Dashboard Add-on"
 description: "Visualize Home Assistant data as a react page for the use on E-Ink displays"
-version: "2024.12.8"
+version: "2024.12.9"
 slug: "e-ink-react-dashboard"
 init: false
 arch:
@@ -9,3 +9,7 @@ arch:
   - armhf
   - armv7
   - i386
+webui: 'http://[HOST]:[PORT:5001]'
+ports:
+  5001/tcp: 5001
+homeassistant_api: true
