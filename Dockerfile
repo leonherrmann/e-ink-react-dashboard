@@ -1,9 +1,7 @@
 ARG BUILD_FROM
 FROM ${BUILD_FROM} as react-build
 
-RUN apk add --no-cache \
-    nodejs \
-    npm
+RUN apk add --no-cache nodejs npm python3 make g++
 
 WORKDIR /app
 COPY src/frontend/package.json /app/
@@ -24,7 +22,7 @@ RUN apk add --no-cache \
     nodejs \
     npm
 
-RUN apk add --no-cache nodejs npm
+    RUN apk add --no-cache nodejs npm python3 make g++ chromium
 
 # Set the working directory
 WORKDIR /app
