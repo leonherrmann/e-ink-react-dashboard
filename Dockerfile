@@ -17,12 +17,8 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 
 # Install Google Chrome Stable and fonts
 # Note: this installs the necessary libs to make the browser work with Puppeteer.
-RUN apk add --no-cache \
-    chromium \
-    nodejs \
-    npm
 
-    RUN apk add --no-cache nodejs npm python3 make g++ chromium
+RUN apk add --no-cache nodejs npm python3 make g++ chromium
 
 # Set the working directory
 WORKDIR /app

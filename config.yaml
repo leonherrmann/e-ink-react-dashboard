@@ -1,6 +1,6 @@
 name: "E-Ink React Dashboard Add-on"
 description: "Visualize Home Assistant data as a react page for the use on E-Ink displays"
-version: "2024.12.6"
+version: "2024.12.7"
 slug: "e-ink-react-dashboard"
 init: false
 arch:
