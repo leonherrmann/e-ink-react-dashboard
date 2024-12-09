@@ -1,6 +1,10 @@
 # Changelog
 
-## 2024.12.1
+## 2024.12.3
+
+Add node to dependencies
+
+## 2024.12.2
 
 Change base docker image
 

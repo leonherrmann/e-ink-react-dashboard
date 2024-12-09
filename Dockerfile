@@ -1,5 +1,8 @@
-ARG BUILD_FROM=node:18
+ARG BUILD_FROM
 FROM ${BUILD_FROM} as react-build
+
+RUN apk add --no-cache nodejs npm
+
 WORKDIR /app
 COPY src/frontend/package.json /app/
 COPY src/frontend/package-lock.json /app/
@@ -20,6 +23,8 @@ RUN apt-get update && apt-get install curl gnupg -y \
   && apt-get update \
   && apt-get install google-chrome-stable -y --no-install-recommends \
   && rm -rf /var/lib/apt/lists/*
+
+  RUN apk add --no-cache nodejs npm
 
 # Set the working directory
 WORKDIR /app
