@@ -1,5 +1,5 @@
 ARG BUILD_FROM
-FROM ${BUILD_FROM}  as react-build
+FROM ${BUILD_FROM} as react-build
 WORKDIR /app
 COPY src/frontend/package.json /app/
 COPY src/frontend/package-lock.json /app/
@@ -8,7 +8,7 @@ COPY src/frontend /app
 RUN npm run build
 
 ARG BUILD_FROM
-FROM ${BUILD_FROM}  as main-app
+FROM ${BUILD_FROM} as main-app
 
 # We don't need the standalone Chromium
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
