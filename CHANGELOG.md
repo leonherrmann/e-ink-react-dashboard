@@ -1,5 +1,10 @@
 # Changelog
 
+## 2024.12.5
+
+Change addiditional package installs
+
+
 ## 2024.12.4
 
 Add fix dockerfile
