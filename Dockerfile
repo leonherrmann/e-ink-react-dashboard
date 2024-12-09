@@ -1,4 +1,4 @@
-ARG BUILD_FROM
+ARG BUILD_FROM=node:18
 FROM ${BUILD_FROM} as react-build
 WORKDIR /app
 COPY src/frontend/package.json /app/
