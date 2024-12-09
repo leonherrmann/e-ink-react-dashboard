@@ -37,4 +37,4 @@ RUN npm rebuild canvas
 EXPOSE 5001
 
 # Start the application
-CMD ["node", "server.js"]
+CMD ["/run.sh"]
